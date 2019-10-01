@@ -16,6 +16,7 @@ module.exports = {
     author: `Jhon Achata Limachi`,
     description: `I'm Full Stack Web Development`
   },
+  pathPrefix : `portfolio-gatsby`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
