@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{215:function(e,n,t){"use strict";t.r(n);var a=t(0),r=t.n(a),c=t(209);n.default=function(){return r.a.createElement(c.a,null,r.a.createElement("h2",null,"Send me a message.-"),r.a.createElement("p",null,"This is my contact page."),r.a.createElement("a",{href:"https://github.com/dcyar/",rel:"noopener noreferrer",target:"_blank"},"my github"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-b49b32438c70ac50f6e1.js.map
