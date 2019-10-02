@@ -1,6 +1,7 @@
 ---
 title: 'The Great Gatsby Bootcamp'
 date: '2019-09-30'
+group: 'blog'
 ---
 
 I just launched a new bootcamp!
