@@ -1,6 +1,7 @@
 ---
 title: 'My experience with Gatsby'
 date: '2019-10-01 10:15:00'
+group: 'blog'
 ---
 
 ![Developer](./developer.jpg)

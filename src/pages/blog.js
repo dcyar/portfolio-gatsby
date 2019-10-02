@@ -1,5 +1,5 @@
 import React from 'react'
-import {  graphql, Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../layouts/Layout'
 import Head from '../components/Head'
@@ -51,7 +51,7 @@ const BlogPage = ({data}) => {
 
 export const data = graphql`
 query {
-    allMarkdownRemark (sort: {order: DESC, fields: frontmatter___date}) {
+    allMarkdownRemark (sort: {order: DESC, fields: frontmatter___date}, filter: {frontmatter: {group: {eq: "blog"}}}) {
         edges {
             node {
                 frontmatter {

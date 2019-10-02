@@ -18,6 +18,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
+    const projectTemplate = path.resolve('./src/templates/project.js')
     const blogTemplate = path.resolve('./src/templates/blog.js')
 
     const res = await graphql(`
@@ -28,6 +29,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
                         fields {
                             slug
                         }
+                        frontmatter {
+                            group
+                        }
                     }
                 }
             }
@@ -35,13 +39,23 @@ module.exports.createPages = async ({ graphql, actions }) => {
     `)
 
     res.data.allMarkdownRemark.edges.forEach((edge) => {
-        createPage({
-            component: blogTemplate,
-            path: `/blog/${edge.node.fields.slug}`,
-            context: {
-                slug: edge.node.fields.slug
-            }
-        })
+        if (edge.node.frontmatter.group === 'project') {
+            createPage({
+                component: projectTemplate,
+                path: `/project/${edge.node.fields.slug}`,
+                context: {
+                    slug: edge.node.fields.slug
+                }
+            })
+        } else if(edge.node.frontmatter.group === 'blog') {
+            createPage({
+                component: blogTemplate,
+                path: `/blog/${edge.node.fields.slug}`,
+                context: {
+                    slug: edge.node.fields.slug
+                }
+            })
+        }
     })
 }
 

@@ -1,0 +1,19 @@
+.contact {
+    border-left: 6px solid #d3d3d3;
+    padding-left: 1rem;
+}
+
+.item {
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.contact .item span {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact .item span a{
+    text-decoration: none;
+    color: #3e5eb4;
+}
