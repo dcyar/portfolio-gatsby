@@ -7,7 +7,7 @@ tags: 'laravel, api, open source'
 
 **OREC-EX** es un proyecto Open Source para la digitalizacion, emision y control de actas (nacimientos, matrimonios, defunciones) en las *Oficinas de Registros del Estado Civil*, que hay en distintos, distritos o provincias a nivel nacional.
 
-![OREC-EX Dashboard](./images/dashboard.png)
+![OREC-EX Dashboard](./dashboard.png)
 
 **Caracteristicas del Sistema:**
 - Registro de Actas.
@@ -21,13 +21,13 @@ tags: 'laravel, api, open source'
 
 *Les dejo algunas capturas del sistema.*
 
-![OREC-EX Login](./images/login.png)
+![OREC-EX Login](./login.png)
 
 
-![OREC-EX CRUD](./images/new-act.png)
+![OREC-EX CRUD](./new-act.png)
 
 
-![OREC-EX Details](./images/act.png)
+![OREC-EX Details](./act.png)
 
 Actualmente estoy trabajando en el **manual de uso** y la **documentacion del sistema**, que estaran disponibles pronto.
 
