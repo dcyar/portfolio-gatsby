@@ -4,10 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-require("dotenv").config({
-  path: `.env`,
-})
-
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -19,13 +15,6 @@ module.exports = {
   pathPrefix : `portfolio-gatsby`,
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-      }
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,7 +43,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Open Sans\:300, 400, 600`
+          `Inconsolata\:400, 700`
         ],
         display: `swap`
       }
